@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    width:45px;
+}
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+}
+
+
+.logo-text{
+    margin-left:.20rem;
+    font-size:28px;
+    color: white;
+}
+
+.protfolio-container{
+    min-width: 100vh;
+    width: 100%;
+    display: flex;
+}
+.navlist{
+    position: fixed;
+    display: flex;
+    gap: 3.5rem;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(117, 91, 144);
+}
+.navlist li{
+    list-style: none;
+
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+}
+.left-container,.right-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.left-container{
+    background: rgb(28, 22, 22);
+    width: 70%;
+    padding-left: 3rem;
+
+}
+.right-container{
+    background: linear-gradient(-45deg,#3877ff,#262525 70%);
+    width: 30%;
+}
+.icons .fa-brands{
+    color: #bbb;
+    font-size: 1.7rem;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.content{
+    margin-left: 4rem;
+
+}
+.content .intro{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.content .intro span{
+    color: #5db9ee;
+}
+.content h1{
+    font-size: 4rem;
+    color: #5db9ee;
+}
+.content .detail{
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+.btn-container button{
+    border: .1rem solid #5db9ee;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .5s ease;
+}
+button:nth-child(1){
+    background: #5db9ee;
+    color: #262525;
+}
+button:nth-child(2){
+    background: transparent;
+    color: #5db9ee;
+    margin-left: 2rem;
+}
+button:nth-child(1):hover{
+    background: transparent;
+    color: #5db9ee;
+}
+button:nth-child(2):hover{
+    background: #5db9ee;
+    color: #262525;
+}
+.icons .fa-brands:hover{
+    cursor: pointer;
+    background: linear-gradient(#fff,#3877ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 60%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%,-40%);
+}
+.circle:nth-child(1){
+    background: linear-gradient(90deg,transparent 50%,#262525 50%);
+    width: 38rem;
+}
+.circle:nth-child(2){
+    width: 30rem;
+    background-image: url("ahmadpht.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: .1rem solid white;
+    box-shadow: 0 0 1rem #fff,inset 0 0 1rem #fff,
+    0 0 2rem #3877ff,
+    inset 0 0 2rem #3877ff,
+    0 0 4rem #3877ff,
+    inset 0 0 4rem #3877ff
+    ;
+}
+.navlist li a::after{
+    content: "";
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: .1rem;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+
+    transition: transform 0.5s;;
+}
+.navlist li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+/* General Page Styles */
+.page1,
+.page2 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+.page1 {
+    background-color: #c3cef0;
+}
+
+.page2 {
+    background-color: white;
+}
+
+/* Page 1 Styles */
+.page1 #left {
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    height: 90%;
+    width: 35%;
+    transform: translate(-50%);
+}
+
+.page1 #left .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 33.3%;
+    width: 100%;
+    border-top: 2px solid black;
+}
+
+.page1 #left .box h4 {
+    font-size: 30px;
+}
+
+.page1 #left .box h1,
+.page1 #left .box p {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.page1 #text1 {
+    margin: 50px;
+    height: 30%;
+    width: 50%;
+    position: absolute;
+    z-index: 9;
+}
+
+.page1 #text1 h4 {
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.page1 #text1 h5 {
+    color: #8873EF;
+    transform: rotate(-20deg);
+    position: absolute;
+    left: -2%;
+}
+
+/* Page 2 Styles */
+#project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+}
+
+#projects {
+    border-top: 2px solid black;
+    height: 100%;
+    width: 31%;
+}
+
+#text3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 30%;
+    width: 100%;
+}
+
+#image img,
+.p1 img {
+    object-fit: cover;
+    height: 90%;
+    width: 90%;
+}
+
+.p1 img {
+    height: 200px;
+    width: 300px;
+}
+
+.p2,
+.p1 {
+    position: relative;
+    top: -30%;
+}
+
+#text4 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    height: 20%;
+    width: 30%;
+}
+
+#text4>h1 {
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+/* Contact Form Styles */
+.contact {
+    position: relative;
+    height: 90vh;
+    width: 100vw;
+    padding: 35px 35%;
+    border-radius: 5px;
+    background-color: #bab0ee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin-bottom: 5px;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea,
+.contact form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+    border: 1px solid #ccc;
+}
+
+.contact form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
